@@ -1,0 +1,240 @@
+body{
+  background-color: powderblue;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.dice{
+  float:left;
+  width:32px;
+  background:#F5F5F5;
+  border:#999 1px solid;
+  padding:10px;
+  font-size:24px;
+  text-align:center;
+  margin:5px;
+}
+
+#mainDiv{
+  width:800px;
+  height: 100%;
+  /* float: left; */
+  border: 1px solid black;
+  margin: auto;
+  padding: 5px 5px 5px 5px;
+  overflow: auto;
+}
+
+#topLeftBox{
+  /* width: 35%;
+  height: 200px; */
+  width: 40vmin;
+  height: 39vmin;
+  float: left;
+
+  /* box-sizing: border-box; */
+  border: black solid .3vmin;
+  /* display: inline-block; */
+  background-color: green;
+
+}
+
+
+
+#topMiddleBox{
+  /* width: 29%;
+  height: 200px; */
+  /* float: left;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 1px;
+  padding: 10px 0; */
+  /* display: inline-block; */
+  width: 20vmin;
+  height: 39vmin;
+  float: left;
+  border: black solid .3vmin;
+  background-color: white;
+}
+
+#topRightBox{
+  /* width: 35%;
+  height: 200px; */
+  /* width: 34vmin;
+  height: 34vmin;
+  float: left;
+  border: 1px solid black;
+  border-radius: 1px;
+  margin: auto;
+  padding: 10px 0; */
+  width: 40vmin;
+  height: 39vmin;
+  /* box-sizing: border-box; */
+  float: left;
+  border: black solid .3vmin;
+  /* display: inline-block; */
+  background-color: red;
+}
+
+#middleLeft{
+  /* width: 35%;
+  height: 100px;
+  float: left;
+  clear: left;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 1px;
+  margin: 0 auto;
+  padding: 10px 0; */
+
+  float: left;
+  clear: left;
+  margin: auto;
+  /* border: 1px solid black;
+  border-radius: 1px;
+  padding: 10px 0; */
+  /* display: inline-block; */
+  width: 40vmin;
+  height: 20vmin;
+  border: black solid .3vmin;
+
+  background-color: white;
+}
+
+#middleHome{
+  width: 20vmin;
+  height: 20vmin;
+  float: left;
+  margin: auto;
+  border: black solid .3vmin;
+
+  background-color: white;
+}
+
+#middleRight{
+  float: left;
+  margin: auto;
+  width: 40vmin;
+  height: 20vmin;
+  border: black solid .3vmin;
+  background-color: white;
+}
+
+
+#bottomLeftBox{
+  width: 40vmin;
+  height: 39vmin;
+  float: left;
+  border: black solid .3vmin;
+  background-color: yellow;
+}
+
+#bottomMiddleBox{
+  width: 20vmin;
+  height: 39vmin;
+  float: left;
+  border: black solid .3vmin;
+  background-color: white;
+}
+
+#bottomRightBox{
+  width: 40vmin;
+  height: 39vmin;
+  float: left;
+  border: black solid .3vmin;
+  background-color: blue;
+}
+
+/* .circle, #sw > div > div > div, #nw > div > div > div, #ne > div > div > div, #se > div > div > div {
+  box-sizing: border-box;
+  text-align: center;
+  padding: .5vmin;
+  font-size: 2.5vmin;
+  margin: auto;
+  margin-top: 20%;
+  background-color: black;
+  border-radius: 50%;
+  height: 60%;
+  width: 60%;
+  box-shadow: 2px 2px 4px black;
+  border: 2px solid black;
+} */
+
+#sw > div > div, #nw > div > div, #ne > div > div, #se > div > div {
+  /* height: 60%;
+  width: 60%; */
+  box-sizing: border-box;
+}
+
+#nw, #ne, #sw, #se{
+  width: 36vmin;
+  height: 36vmin;
+  box-sizing: border-box;
+  border: black solid .3vmin;
+}
+
+#nw > div > div, #ne > div > div, #sw > div > div, #se > div > div {
+  float: left;
+  width: 6.5vmin;
+  height: 6.5vmin;
+  margin: 3.6vmin 3.6vmin 3.6vmin;
+  border: 1px solid black;
+}
+
+#sw, #sw > div > div, #sw > div > div > div {
+  background-color: yellow; }
+
+#nw, #nw > div > div, #nw > div > div > div {
+  background-color: green; }
+
+#se, #se > div > div > div, #se > div > div {
+  background-color: blue; }
+
+#ne, #ne > div > div, #ne > div > div > div {
+  background-color: red; }
+
+
+
+/* #ne > div > div > div {
+  background-color: red;
+} */
+
+
+
+
+
+.a {
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 6vmin;
+  height: 6vmin;
+  padding: 5px;
+
+  /* position: static;
+  overflow: hidden; */
+  border: 1px solid black;
+  border-radius: 1px;
+  padding: 1px 1px 1px 1px;
+
+}
+
+.red{
+  background-color: red;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: green;
+}

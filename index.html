@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/master.css">
+    <title></title>
+
+
+  </head>
+  <body>
+
+    <h1>Ludo</h1>
+    <h2 class = "playerTurn"></h2>
+    <div id="die1" class="dice">0</div>
+    <button onclick="rollDice()">Roll Dice</button>
+    <h2 id="status" style="clear:left;"></h2>
+
+    <div id = "mainDiv">
+      <div id="topRow">
+
+        <div id = "topLeftBox" >
+          <div id = "nw" style="margin:auto;margin-top:1.5vmin;">
+            <div style="width:28vmin;height:27vmin;margin:auto;margin-top:4vmin;background-color: white;">
+              <div id="green-4"><img src="images/piece4.png" width="38" height="38"></div>
+              <div id="green-3"><img src="images/piece3.png" width="40" height="40"></div>
+              <div id="green-2"><img src="images/piece2.png" width="40" height="40"></div>
+              <div id="green-1"><img src="images/piece1.png" width="40" height="40"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id = "topMiddleBox">
+            <div class="a" id="10" data-num="10">1</div>
+            <div class="a" id="11" data-num="11">2</div>
+            <div class="a" id="12" data-num="12">3</div>
+            <div class="a" id="9" data-num="9">4</div>
+            <div class="a red" id="57" data-num="57">5</div>
+            <div class="a red" id="13" data-num="13">6</div>
+            <div class="a" id="8" data-num="8">7</div>
+            <div class="a red" id="58" data-num="58">8</div>
+            <div class="a" id="14" data-num="14">9</div>
+            <div class="a" id="7" data-num="7">10</div>
+            <div class="a red" id="59" data-num="59">11</div>
+            <div class="a" id="15" data-num="15">12</div>
+            <div class="a" id="6" data-num="6">13</div>
+            <div class="a red" id="60" data-num="60">14</div>
+            <div class="a" id="16" data-num="16">15</div>
+            <div class="a" id="5" data-num="5">16</div>
+            <div class="a red" id="61" data-num="61">17</div>
+            <div class="a" id="17" data-num="17">18</div>
+        </div>
+
+        <div id = "topRightBox">
+          <div id = "ne" style="margin:auto;margin-top:1.5vmin;">
+            <div style="width:28vmin;height:27vmin;margin:auto;margin-top:4vmin;background-color: white;">
+              <div id="red-4" ><div>4</div></div>
+              <div id="red-3" ><div>3</div></div>
+              <div id="red-2" ><div>2</div></div>
+              <div id="red-1" ><div>1</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="middleRow">
+        <div id="middleLeft">
+          <div>
+            <div class="a" id="51" data-num="51">19</div>
+            <div class="a green" id="0" data-num="0"></div>
+            <div class="a" id="1" data-num="1">21</div>
+            <div class="a" id="2" data-num="2">22</div>
+            <div class="a" id="3" data-num="3">23</div>
+            <div class="a" id="4" data-num="4">24</div>
+          </div>
+          <div>
+            <div class="a" id="50" data-num="50">25</div>
+            <div class="a green" id="52" data-num="52">26</div>
+            <div class="a green" id="53" data-num="53">27</div>
+            <div class="a green" id="54" data-num="54">28</div>
+            <div class="a green" id="55" data-num="55">29</div>
+            <div class="a green" id="56" data-num="56">30</div>
+          </div>
+          <div>
+            <div class="a" id="49" data-num="49">31</div>
+            <div class="a" id="48" data-num="48">32</div>
+            <div class="a" id="47" data-num="47">33</div>
+            <div class="a" id="46" data-num="46">34</div>
+            <div class="a" id="45" data-num="45">35</div>
+            <div class="a" id="44" data-num="44">36</div>
+          </div>
+        </div>
+
+        <div id="middleHome">
+
+        </div>
+
+        <div id="middleRight">
+          <div>
+            <div class="a" id="18" data-num="18">37</div>
+            <div class="a" id="19" data-num="19">38</div>
+            <div class="a" id="20" data-num="20">39</div>
+            <div class="a" id="21" data-num="21">40</div>
+            <div class="a" id="22" data-num="22">41</div>
+            <div class="a" id="23" data-num="23">42</div>
+          </div>
+          <div>
+            <div class="a blue" id="66" data-num="66">43</div>
+            <div class="a blue" id="65" data-num="65">44</div>
+            <div class="a blue" id="64" data-num="64">45</div>
+            <div class="a blue" id="63" data-num="63">46</div>
+            <div class="a blue" id="62" data-num="62">47</div>
+            <div class="a" id="24" data-num="24">48</div>
+          </div>
+          <div>
+            <div class="a" id="30" data-num="30">49</div>
+            <div class="a" id="29" data-num="29">50</div>
+            <div class="a" id="28" data-num="28">51</div>
+            <div class="a" id="27" data-num="27">52</div>
+            <div class="a blue" id="26" data-num="26">53</div>
+            <div class="a" id="25" data-num="25">54</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="botomRow">
+
+        <div id = "bottomLeftBox">
+          <div id = "sw" style="margin:auto;margin-top:1.5vmin;">
+            <div style="width:28vmin;height:27vmin;margin:auto;margin-top:4vmin;background-color: white;">
+              <div id="yellow-4" ><div>4</div></div>
+              <div id="yellow-3" ><div>3</div></div>
+              <div id="yellow-2" ><div>2</div></div>
+              <div id="yellow-1" ><div>1</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div id = "bottomMiddleBox">
+
+          <div class="a" id="43" data-num="43">55</div>
+          <div class="a yellow" id="71" data-num="71">56</div>
+          <div class="a" id="31" data-num="31">57</div>
+          <div class="a" id="42" data-num="42">58</div>
+          <div class="a yellow" id="70" data-num="70">59</div>
+          <div class="a" id="32" data-num="32">60</div>
+          <div class="a" id="41" data-num="41">61</div>
+          <div class="a yellow" id="69" data-num="69">62</div>
+          <div class="a" id="33" data-num="33">63</div>
+          <div class="a" id="40" data-num="40">64</div>
+          <div class="a yellow" id="68" data-num="68">65</div>
+          <div class="a" id="34" data-num="34">66</div>
+          <div class="a yellow" id="39" data-num="39">67</div>
+          <div class="a yellow" id="67" data-num="67">68</div>
+          <div class="a" id="35" data-num="35">69</div>
+          <div class="a" id="38" data-num="38">70</div>
+          <div class="a" id="37" data-num="37">71</div>
+          <div class="a" id="36" data-num="36">72</div>
+
+        </div>
+
+        <div id = "bottomRightBox">
+          <div id = "se" style="margin:auto;margin-top:1.5vmin;">
+            <div style="width:28vmin;height:27vmin;margin:auto;margin-top:4vmin;background-color: white;">
+              <div id="blue-4" ><div>4</div></div>
+              <div id="blue-3" ><div>3</div></div>
+              <div id="blue-2" ><div>2</div></div>
+              <div id="blue-1" ><div>1</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="./js/index.js">   </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  </body>
+
+</html>
